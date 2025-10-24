@@ -5,9 +5,11 @@ public class Validacao {
     
     public Validacao(String User, String Pass) {
         if (User.equals(UserAdm) && Pass.equals(PassAdm)) {
-            this.Salt = true;
+            this.auth = true;
+             System.out.println("Bem-vindo!");
         } else {
-            this.Salt = false;
+            this.auth = false;
+            System.out.println("Erro");
         }
     }
 
